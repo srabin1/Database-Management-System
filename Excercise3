@@ -1,1 +1,27 @@
+Excercise#3:
+1. Based on the previously created database on your local server, you need to create a table that contains some categories of information through java programming. Use the code in the file that you can find at the bottom and modify it to your own settings. You need to modify the name of the database, user name, and password.
+2. While test2.java contains the code snippet to execute an SQL INSERT statement, the following code snippets show how to execute SQL UPDATE and DELETE statements in test3.java.
 
+// update
+String query1 = "update Student set Address = ? where Name = ?";
+preparedStatement = conn.prepareStatement(query1);
+preparedStatement.setString(1, "4500 Cass Ave");
+preparedStatement.setString(2, "Shiyong Lu");
+preparedStatement.executeUpdate();
+resultSet = statement
+.executeQuery("select * from Student");
+writeResultSet(resultSet);
+
+// Delete
+String query2 = "DELETE FROM Student WHERE Name = ?";
+preparedStatement = conn.prepareStatement(query2);
+preparedStatement.setString(1, "Shiyong Lu");
+preparedStatement.executeUpdate();
+resultSet = statement
+.executeQuery("select * from Student");
+
+writeResultSet(resultSet);
+
+3. Compile the test3.java by using the command:  javac -cp .;mysql-connector-java-8.0.13.jar test3.java
+4. Run the test3.java by using the command: java  -cp .\mysql-connector-java-8.0.17.jar test3.java
+**Notice you may need to change the name regarding the version you are using for the jar file. Use the jar file you downloaded from previous exercises.
