@@ -1,1 +1,10 @@
 
+Excercise1:
+
+This is the first excercise and the task is how to run a .java file in your terminal or command prompt.
+1. Download Java JDK at http://www.oracle.com/technetwork/java/javase/downloads/index.html (Links to an external site.)
+2. Make sure you have the global java running environment by typing java under any folder in the terminal
+3. Configure your Windows 10 environment by checking the web: https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/ (Links to an external site.)
+4. Download the two files from Database_Management_System repository: test1.java and the mysql-connector-java-5.1.32-bin.jar
+5. Compile the test1.java by using the command:  java -cp .\mysql-connector-java-5.1.32-bin.jar test1.java
+**To successfully run the commands above, you need to connect with the school network (WSU WIFI), or to use a machine on campus that connects to the same network (in any classroom that has computers)!
