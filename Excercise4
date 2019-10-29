@@ -1,0 +1,38 @@
+Excercise #4:
+1. Download and install Eclipse Oxygen EE from : https://www.eclipse.org/downloads/packages/release/oxygen/rc2/eclipse-ide-java-ee-developers (Links to an external site.)
+You will use the exe file to execute the program directly later.
+
+2. Download and install Tomcat 9 from:
+https://tomcat.apache.org/download-90.cgi (Links to an external site.)
+
+3. Open Eclipse. It is suggested to open Eclipse as admin. Set up as following: Window -> Preferences -> Server -> Runtime Environment, Choose Tomcat 9.0. Then Apply and Close
+
+4. Again, go: Window -> Show View -> Servers. The new bar of Servers then shows up at the bottom of the interface. Click the link in this bar. Select Apache, add the tomcat 9.0 from where you stored it in step 2.
+
+5. Import the DB3.war file that you can find at the bottom by clicking File -> Import. Then change the code in the java source code for the user ID and password on your server. At this moment, I assume you already finished the previous exercises because the table in your local server is needed for the followings.
+
+6. Update the Project Facets and Java Run Time environment
+Project -> Properties -> Java -> 12
+
+7. Project -> Properties -> Java Compiler -> Java Build Path -> JRE System Library
+Update to JavaSE-12
+8. If you have a port problem that is occupied by another service, refer to http://www.codeman.in/blog/windows-kill-process-by-port-number-157 (Links to an external site.)
+
+9. You may need to use the version of java connector (.jar file) to be consistent with the version of your MySQL server. If so, go Project Explorer -> Java Resources -> Libraries -> Web App Libraries, then add your preferred version here.
+
+10. This website is helpful for studying: https://www.codejava.net/coding/jsp-servlet-jdbc-mysql-create-read-update-delete-crud-example (Links to an external site.)
+
+11. Right-click on Project Explorer -> WebContent -> People***.jsp on the left of your software. Select Run as -> Run on the server. Functions such as insert, delete, edit, list all are already in the project, please play with those functions. You should be able to see the web page which connects to the local database.
+
+12. Again, do NOT forget to add all the jar files provided here to your project’s library.
+servlet-api.jar - used to import HttpServlet, HttpServletRequest, and HttpServletResponse
+
+13. jstl-1.2.jar - contains the JSP standard tag library, it includes HTML tags that allow the programmer to bind HTML elements to Java objects, and to display those objects
+
+mysql-connector-java-8.0.13.jar - Allows a connection to be established to the database
+Tip: be careful of library problems. When you cannot run some statements that are obviously correct or are having weird errors, try to fix this first.
+
+
+
+
+ 
