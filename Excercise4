@@ -33,6 +33,10 @@ mysql-connector-java-8.0.13.jar - Allows a connection to be established to the d
 Tip: be careful of library problems. When you cannot run some statements that are obviously correct or are having weird errors, try to fix this first.
 
 
-
+Download the following files:
+DB3.war
+jstl-1.2.jar
+mysql-connector-java-8.0.17.jar
+servlet-api.jar
 
  
